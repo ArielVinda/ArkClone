@@ -1,0 +1,8 @@
+Loader* loader = new Loader();
+	sf::Image* level = new sf::Image(loader->getImage(1));
+	
+	//Prueba de escena
+	currentScene = new PlayScene(level);
+	//
+	
+	window.create(sf::VideoMode(SCREEN_WIDTH, SCREEN_HEIGHT), "Arkanoid");
